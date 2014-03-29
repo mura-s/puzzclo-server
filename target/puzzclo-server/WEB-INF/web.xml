@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="TaskList" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <display-name>puzzclo-server</display-name>
+        <servlet-name>puzzclo-server</servlet-name>
+        <servlet-class>muras.puzzclo.server.servlet.WebSocketServletImpl</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>puzzclo-server</servlet-name>
+        <url-pattern>/websocket/*</url-pattern>
+    </servlet-mapping>
+</web-app>
