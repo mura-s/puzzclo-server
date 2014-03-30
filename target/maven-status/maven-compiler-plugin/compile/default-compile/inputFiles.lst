@@ -1,2 +1,3 @@
 /Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/servlet/WebSocketServletImpl.java
-/Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/servlet/PuzzcloWebSocketListener.java
+/Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/service/PuzzcloSocketListener.java
+/Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/service/PuzzcloMatchingManager.java
