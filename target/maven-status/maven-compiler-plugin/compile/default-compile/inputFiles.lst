@@ -1,3 +1,5 @@
 /Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/servlet/WebSocketServletImpl.java
 /Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/service/PuzzcloSocketListener.java
 /Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/service/PuzzcloMatchingManager.java
+/Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/utils/GameState.java
+/Users/muramatsu/Documents/workspace_java/puzzclo-server/src/main/java/muras/puzzclo/server/domain/SocketMatchData.java

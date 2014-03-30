@@ -1,3 +1,4 @@
 muras/puzzclo/server/servlet/WebSocketServletImpl.class
 muras/puzzclo/server/service/PuzzcloSocketListener.class
+muras/puzzclo/server/service/PuzzcloMatchingManager$1.class
 muras/puzzclo/server/service/PuzzcloMatchingManager.class

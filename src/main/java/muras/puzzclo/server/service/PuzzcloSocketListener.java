@@ -12,6 +12,8 @@ import org.eclipse.jetty.websocket.api.annotations.WebSocket;
 @WebSocket
 public class PuzzcloSocketListener {
 	private Session session;
+	
+	private String playerName = "";
 
 	@OnWebSocketConnect
 	public void onConnect(Session session) {
@@ -22,7 +24,7 @@ public class PuzzcloSocketListener {
 
 	@OnWebSocketMessage
 	public void onText(String message) {
-		PuzzcloMatchingManager.getInstance().sendToAll(message);
+		PuzzcloMatchingManager.getInstance().sendMessage(this, message);
 	}
 
 	@OnWebSocketClose
@@ -33,5 +35,13 @@ public class PuzzcloSocketListener {
 
 	public Session getSession() {
 		return this.session;
+	}
+	
+	public String getPlayerName() {
+		return playerName;
+	}
+	
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
 	}
 }
