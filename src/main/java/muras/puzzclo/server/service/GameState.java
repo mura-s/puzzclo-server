@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2014 Seiya Muramatsu. All rights reserved.
  */
-package muras.puzzclo.server.utils;
+package muras.puzzclo.server.service;
 
 /**
  * ゲームの状態
@@ -69,6 +69,17 @@ public enum GameState {
 	/**
 	 * ゲームクリア後
 	 */
-	GAME_CLEAR;
+	GAME_CLEAR,
+	
+	/**
+	 * 勝った時
+	 */
+	GAME_WIN,
+	
+	/**
+	 * 負けた時
+	 */
+	GAME_LOST;
+
 
 }

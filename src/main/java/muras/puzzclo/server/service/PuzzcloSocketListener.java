@@ -12,8 +12,13 @@ import org.eclipse.jetty.websocket.api.annotations.WebSocket;
 @WebSocket
 public class PuzzcloSocketListener {
 	private Session session;
+
+	private String myName = "";
+
+	private String opponentName = "";
 	
-	private String playerName = "";
+	// 対戦相手接続待ちか
+	private boolean isWaitConnect = false;
 
 	@OnWebSocketConnect
 	public void onConnect(Session session) {
@@ -36,12 +41,28 @@ public class PuzzcloSocketListener {
 	public Session getSession() {
 		return this.session;
 	}
-	
-	public String getPlayerName() {
-		return playerName;
+
+	public String getMyName() {
+		return myName;
 	}
-	
-	public void setPlayerName(String playerName) {
-		this.playerName = playerName;
+
+	public void setPlayerName(String myName) {
+		this.myName = myName;
+	}
+
+	public String getOpponentName() {
+		return opponentName;
+	}
+
+	public void setOpponentName(String opponentName) {
+		this.opponentName = opponentName;
+	}
+
+	public boolean isWaitConnect() {
+		return isWaitConnect;
+	}
+
+	public void setWaitConnect(boolean isWaitConnect) {
+		this.isWaitConnect = isWaitConnect;
 	}
 }
